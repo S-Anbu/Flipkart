@@ -1,52 +1,299 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Flipkart</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <!-- header section -->
-     <nav id="header" class="p-3">
-        <section  class="container d-flex align-items-center justify-content-center gap-4 ">
-            <div id="nav" class="d-flex gap-3 align-items-center justify-content-between">
-                <div>
-                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" width="160" height="40" title="Flipkart">
-                </div>
-                <div id="dummy" class="bg1 d-flex align-items-center">
-                    <svg width="24" height="24" class="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Search Icon</title><path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    <input class="searchbar" type="text" placeholder="Search for Products, Brands and More">
-                </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-around gap-5 ">
-            <div class="login-btn d-flex align-items-center justify-content-between" >
-              <a href="https://www.flipkart.com/account/login?ret=/" class="d-flex ">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2M7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.5.88 4.93 1.78A7.9 7.9 0 0 1 12 20c-1.86 0-3.57-.64-4.93-1.72m11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33A7.93 7.93 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.5-1.64 4.83M12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6m0 5a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 12 8a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 12 11"/></svg>
-                <span>Login</span>
-              </a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="currentColor" d="M12 14.975q-.2 0-.375-.062T11.3 14.7l-4.6-4.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062"/></svg>
-            </div>
-            <div class="d-flex align-items-center justify-content-center gap-1">
-              <a class="cart" href="https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M228.61 60.16A6 6 0 0 0 224 58H61l-6.37-35.07a6 6 0 0 0-5.9-4.93H24a6 6 0 0 0 0 12h19.72l25.81 141.94a21.93 21.93 0 0 0 6.24 11.77a26 26 0 1 0 38.12 6.29h52.22A26 26 0 1 0 188 178H91.17a10 10 0 0 1-9.84-8.21L77.73 150H196.1a22 22 0 0 0 21.65-18.06l12.15-66.87a6 6 0 0 0-1.29-4.91M106 204a14 14 0 1 1-14-14a14 14 0 0 1 14 14m96 0a14 14 0 1 1-14-14a14 14 0 0 1 14 14m3.94-74.21a10 10 0 0 1-9.84 8.21H75.55L63.19 70h153.62Z"/></svg>
-              <span>Cart</span>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+  <title>Flipkart</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- header section -->
+  <header id="header" class="p-3">
+    <section class="containers1 d-flex align-items-center justify-content-center gap-4 ">
+      <div id="nav" class="d-flex gap-3 align-items-center justify-content-between">
+        <div>
+          <img class="header_image"
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+            width="160" height="40" title="Flipkart">
+        </div>
+        <div id="dummy" class="bg1 d-flex flex-row align-items-center">
+          <svg width="24" height="24" class="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>Search Icon</title>
+            <path
+              d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+              stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+          </svg>
+          <input class="searchbar" type="text" placeholder="Search for Products, Brands and More">
+        </div>
+      </div>
+      <div class="_login-div d-flex align-items-center justify-content-around gap-md-5 ">
+        <div class="login-btn d-flex align-items-center justify-content-between">
+          <a href="https://www.flipkart.com/account/login?ret=/" class="d-flex ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2M7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.5.88 4.93 1.78A7.9 7.9 0 0 1 12 20c-1.86 0-3.57-.64-4.93-1.72m11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33A7.93 7.93 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.5-1.64 4.83M12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6m0 5a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 12 8a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 12 11" />
+            </svg>
+            <span>Login</span>
+          </a>
+          <svg id="rotate" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M12 14.975q-.2 0-.375-.062T11.3 14.7l-4.6-4.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062" />
+          </svg>
+        </div>
+        <div class="login-div">
+          <ul class="login-ul _3YjYK7 ecs1XG" style="width: 280px;"><a href="/account/login?signup=true&amp;ret=/"
+              title="Sign Up" class="_2Udqwk border-bottom"><span>New customer?</span><span
+                class="_1Mikcj ms-5 text-primary fw-bold">Sign Up</span></a><a
+              href="/account/?rd=0&amp;link=home_account" class="yx2hEq " title="My Profile">
+              <li class="AT0fUR">
+                <div class="_3pKU-e"><img class="SFnind"
+                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg"
+                    alt="My Profile" width="24" height="24"></div>My Profile
+              </li>
+            </a><a href="/plus" class="yx2hEq" title="Flipkart Plus Zone">
+              <li class="AT0fUR">
+                <div class="_3pKU-e"><img class="SFnind"
+                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkplus-4ff29a.svg"
+                    alt="Flipkart Plus Zone" width="24" height="24"></div>Flipkart Plus Zone
+              </li>
+            </a><a href="/account/orders?link=home_orders" class="yx2hEq" title="Orders">
+              <li class="AT0fUR">
+                <div class="_3pKU-e"><img class="SFnind"
+                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/orders-bfe8c4.svg"
+                    alt="Orders" width="24" height="24"></div>Orders
+              </li>
+            </a><a href="/wishlist?link=home_wishlist" class="yx2hEq" title="Wishlist">
+              <li class="AT0fUR">
+                <div class="_3pKU-e"><img class="SFnind"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDIwLjI0OUMxMiAyMC4yNDkgMi42MjUgMTQuOTk5IDIuNjI1IDguNjI0MDNDMi42MjUgNy40OTcwNSAzLjAxNTQ2IDYuNDA0ODggMy43Mjk5NiA1LjUzMzM0QzQuNDQ0NDUgNC42NjE3OSA1LjQzODg0IDQuMDY0NzIgNi41NDM5MyAzLjg0MzdDNy42NDkwMyAzLjYyMjY4IDguNzk2NTcgMy43OTEzNyA5Ljc5MTMxIDQuMzIxMDZDMTAuNzg2MSA0Ljg1MDc2IDExLjU2NjUgNS43MDg3NCAxMiA2Ljc0OTAzVjYuNzQ5MDNDMTIuNDMzNSA1LjcwODc0IDEzLjIxMzkgNC44NTA3NiAxNC4yMDg3IDQuMzIxMDZDMTUuMjAzNCAzLjc5MTM3IDE2LjM1MSAzLjYyMjY4IDE3LjQ1NjEgMy44NDM3QzE4LjU2MTIgNC4wNjQ3MiAxOS41NTU1IDQuNjYxNzkgMjAuMjcgNS41MzMzNEMyMC45ODQ1IDYuNDA0ODggMjEuMzc1IDcuNDk3MDUgMjEuMzc1IDguNjI0MDNDMjEuMzc1IDE0Ljk5OSAxMiAyMC4yNDkgMTIgMjAuMjQ5WiIgc3Ryb2tlPSIjMjEyMTIxIiBzdHJva2Utd2lkdGg9IjEuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo="
+                    alt="Wishlist" width="24" height="24"></div>Wishlist
+              </li>
+            </a><a href="/account/rewards?link=home_rewards" class="yx2hEq" title="Rewards">
+              <li class="AT0fUR">
+                <div class="_3pKU-e"><img class="SFnind"
+                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/rewards-fbd212.svg"
+                    alt="Rewards" width="24" height="24"></div>Rewards
+              </li>
+            </a><a href="/the-gift-card-store?link=home_giftcard" class="yx2hEq" title="Gift Cards">
+              <li class="AT0fUR">
+                <div class="_3pKU-e"><img class="SFnind"
+                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/giftCard-bd87e1.svg"
+                    alt="Gift Cards" width="24" height="24"></div>Gift Cards
+              </li>
+            </a></ul>
+        </div>
+        <div  class="d-flex align-items-center justify-content-center gap-1">
+          <a class="cart" href="https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+              <path fill="currentColor"
+                d="M228.61 60.16A6 6 0 0 0 224 58H61l-6.37-35.07a6 6 0 0 0-5.9-4.93H24a6 6 0 0 0 0 12h19.72l25.81 141.94a21.93 21.93 0 0 0 6.24 11.77a26 26 0 1 0 38.12 6.29h52.22A26 26 0 1 0 188 178H91.17a10 10 0 0 1-9.84-8.21L77.73 150H196.1a22 22 0 0 0 21.65-18.06l12.15-66.87a6 6 0 0 0-1.29-4.91M106 204a14 14 0 1 1-14-14a14 14 0 0 1 14 14m96 0a14 14 0 1 1-14-14a14 14 0 0 1 14 14m3.94-74.21a10 10 0 0 1-9.84 8.21H75.55L63.19 70h153.62Z" />
+            </svg>
+            <span  id="hide_span">Cart</span>
+          </a>
+        </div>
+        <div class="d-flex align-items-center justify-content-center gap-1">
+          <a class="seller"
+            href="https://seller.flipkart.com/sell-online?utm_source=fkwebsite&utm_medium=websitedirect">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 14 14">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                d="M1.5 8.5V13a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8.5M8 8.5v5M1.5 10H8M.5 4L2 .5h10L13.5 4H.5zm4.25 0v1a2 2 0 0 1-2 2h-.28a2 2 0 0 1-2-2V4m8.78 0v1a2 2 0 0 1-2 2h-.5a2 2 0 0 1-2-2V4m8.75 0v1a2 2 0 0 1-2 2h-.25a2 2 0 0 1-2-2V4" />
+            </svg>
+            <span id="hide_span">Become a seller</span>
+          </a>
+        </div>
+        <div class="d-flex three-dot  align-items-center justify-content-center gap-1">
+          <a class="seller"
+            href="https://seller.flipkart.com/sell-online?utm_source=fkwebsite&utm_medium=websitedirect">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+              <path fill="currentColor"
+                d="M9.5 13a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0" />
+            </svg>
             </a>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- main section -->
+  <main>
+    <div class=" container top_scroller">
+      <div class="d-flex row w-100">
+        <div class="col-2">
+          <a href="https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&amp;fm=neo%2Fmerchandising&amp;iid=M_6526aea8-ecfc-40bf-8b31-3e66f18441a1_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&amp;otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&amp;otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&amp;cid=CBUR1Q46W5F1"
+            class="_1ch8e_ link" aria-label="Grocery">
+            <div class="d-flex flex-column text-center align-items-center">
+              <img class="top_scroller_image" src="./assets/img/grossary.webp" alt="Grocery">
+              <span class="top_scroller_span">Grocery</span>
             </div>
-            <div class="d-flex align-items-center justify-content-center gap-1">
-              <a class="seller" href="https://seller.flipkart.com/sell-online?utm_source=fkwebsite&utm_medium=websitedirect">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 14 14"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M1.5 8.5V13a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8.5M8 8.5v5M1.5 10H8M.5 4L2 .5h10L13.5 4H.5zm4.25 0v1a2 2 0 0 1-2 2h-.28a2 2 0 0 1-2-2V4m8.78 0v1a2 2 0 0 1-2 2h-.5a2 2 0 0 1-2-2V4m8.75 0v1a2 2 0 0 1-2 2h-.25a2 2 0 0 1-2-2V4"/></svg>
-              <span>Become a seller</span>
-            </a>
+          </a>
+        </div>
+        <div class="col-2">
+          <a href="https://www.flipkart.com/mobile-phones-store?fm=neo%2Fmerchandising&amp;iid=M_6526aea8-ecfc-40bf-8b31-3e66f18441a1_1_372UD5BXDFYS_MC.ZRQ4DKH28K8J&amp;otracker=hp_rich_navigation_2_1.navigationCard.RICH_NAVIGATION_Mobiles_ZRQ4DKH28K8J&amp;otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_2_L0_view-all&amp;cid=ZRQ4DKH28K8J"
+      class="_1ch8e_ link" aria-label="Mobiles">
+            <div class="d-flex flex-column text-center align-items-center">
+              <img class="top_scroller_image" src="./assets/img/mobiles.webp" alt="Mobiles">
+              <span class="top_scroller_span">Mobiles</span>
             </div>
-            <div class=" three-dot p-2 ">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M9.5 13a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0"/></svg>
+          </a>
+        </div>
+        <div class="col-2">
+          <a href="https://www.flipkart.com/electronics-best-offers-store?fm=neo%2Fmerchandising&iid=M_d5baf57c-571c-43c2-b3c0-c991ab85d872_1_372UD5BXDFYS_MC.KV8NA7Z3WYHI&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Electronics~Audio_KV8NA7Z3WYHI&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L1_view-all&cid=KV8NA7Z3WYHI"
+            class="_1ch8e_ link" aria-label="Electronics">
+            <div class="d-flex flex-column text-center align-items-center">
+              <img class="top_scroller_image" src="./assets/img/Electronics.webp" alt="Electronics">
+              <span class="top_scroller_span">Electronics</span>
             </div>
+          </a>
+        </div>
+        <div class="col-2">
+          <a href="https://www.flipkart.com/clothing-and-accessories/topwear/pr?sid=clo,ash&p[]=facets.ideal_for%255B%255D%3DMen&p[]=facets.ideal_for%255B%255D%3Dmen&otracker=categorytree&fm=neo%2Fmerchandising&iid=M_2bafccef-5a78-408e-84e4-2cf5ac7b2d77_1_372UD5BXDFYS_MC.AHHHWF67UPNB&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Fashion~Men%2527s%2BTop%2BWear~All_AHHHWF67UPNB&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=AHHHWF67UPNB"
+            class="_1ch8e_ link" aria-label="Fasion">
+            <div class="d-flex flex-column text-center align-items-center">
+              <img class="top_scroller_image" src="./assets/img/Fassion.webp" alt="Fasion" width="90px" height="90px">
+              <span class="top_scroller_span">Fasion</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-2">
+          <a href="https://www.flipkart.com/tvs-and-appliances-new-clp-store?fm=neo%2Fmerchandising&amp;iid=M_6526aea8-ecfc-40bf-8b31-3e66f18441a1_1_372UD5BXDFYS_MC.LO4IWVHA61BX&amp;otracker=hp_rich_navigation_6_1.navigationCard.RICH_NAVIGATION_Appliances_LO4IWVHA61BX&amp;otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_6_L0_view-all&amp;cid=LO4IWVHA61BX"
+            class="_1ch8e_ link" aria-label="Appliances">
+            <div class="d-flex flex-column text-center align-items-center">
+              <img class="top_scroller_image" src="./assets/img/Appliances.webp" alt="Appliances">
+              <span class="top_scroller_span" >Appliances</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-2">
+          <a href="https://www.flipkart.com/travel/flights?param=DTNavIcon&amp;fm=neo%2Fmerchandising&amp;iid=M_6526aea8-ecfc-40bf-8b31-3e66f18441a1_1_372UD5BXDFYS_MC.V4ZPKTOAO321&amp;otracker=hp_rich_navigation_7_1.navigationCard.RICH_NAVIGATION_Travel_V4ZPKTOAO321&amp;otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_7_L0_view-all&amp;cid=V4ZPKTOAO321"
+            class="_1ch8e_ link" aria-label="Travel">
+            <div class="d-flex flex-column text-center align-items-center">
+              <img class="top_scroller_image" src="./assets/img/Travel.webp" alt="Travel">
+              <span class="top_scroller_span">Travel</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- scroll banner -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <picture>
+            <!-- <source media="(max-width: 800px)" srcset="assets/img/banner1.webp"> -->
+            <source media="(max-width: 450px)" srcset="assets/img/smbanner1.webp">
+            <img class="scroll_banner_image " id="scroll_banner_image1" src="./assets/img/xlbanner1.webp" class="d-block " alt="...">
+          </picture>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="scroll_banner_image scroll_banner_image2" src="./assets/img/xlbanner2.webp" class="d-block w-100 h-auto" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img class="scroll_banner_image scroll_banner_image3  " src="./assets/img/xlbanner3.webp" class="d-block w-100 h-auto" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<!-- card section -->
+
+
+<div class="container card">
+  <h2 class="text-center mt-4">Best of Electronics</h2>
+  <div class="row  mt-4">
+      <div class="col-md-4 col-lg-2 col-6">
+        <a class="text-decoration-none" href="https://www.flipkart.com/computers/monitors/pr?sid=6bo%2C9no&fm=neo%2Fmerchandising&iid=M_ce1a6f68-d7d2-4ae1-875c-0d0877d9a11f_2_372UD5BXDFYS_MC.ECL5SFI77NSY&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_3_L2_view-all&cid=ECL5SFI77NSY&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&p%5B%5D=facets.brand%255B%255D%3DViewSonic&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTgwMDAiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJWaWV3U29uaWMgTW9uaXRvcnMiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJNT05HVVlGM0FHQlpTTVFHIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D">
+          <div class="card">
+            <img src="./assets/img/card5.webp" class="card-img-top" alt="Sony Speaker">
+            <div class="card-body card_font text-center">
+                <h5 class="card-title">Best Selling Moniters...</h5>
+                <p class="card-text">Grab Now</p>
+            </div>
+        </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-2 col-6">
+        <a class="text-decoration-none" href="https://www.flipkart.com/audio-video/headset/pr?sid=0pm%2Cfcn&p%5B%5D=facets.connectivity%255B%255D%3DBluetooth&sort=popularity&p%5B%5D=facets.rating%255B%255D%3D3%25E2%2598%2585%2B%2526%2Babove&p%5B%5D=facets.rating%255B%255D%3D4%25E2%2598%2585%2B%2526%2Babove&p%5B%5D=facets.price_range.from%3D599&p%5B%5D=facets.price_range.to%3DMax&p%5B%5D=facets.headphone_type%255B%255D%3DTrue%2BWireless&param=86&hpid=WqCPtE2MbDEYEbYbttXC1qp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJHcmFiIE5vdyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IkFDQ0hZVkVRQUNBSllHWFMiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJCZXN0IFRydWV3aXJlbGVzcyBIZWFkcGhvbmVzIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D"> 
+          <div class="card">
+            <img src="./assets/img/card3.webp" class="card-img-top" alt="OnePlus Earbuds">
+            <div class="card-body card_font text-center">
+                <h5 class="card-title">Best Truewireless...</h5>
+                <p class="card-text">From ₹499*</p>
+            </div>
+        </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-2 col-6">
+        <a class="text-decoration-none" href="https://www.flipkart.com/health-personal-care-appliances/personal-care-appliances/shavers/pr?sid=zlw%2C79s%2Cu3j&fm=neo%2Fmerchandising&iid=M_abc94b2e-c5ad-4d9f-a408-f077e0b71fda_1_372UD5BXDFYS_MC.7IRTITZ74DB6&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_3_L2_view-all&cid=7IRTITZ74DB6&hpid=zGQlhArn0YmltUO10UPgIKp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTEsNjQ5Il0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJzaW5nbGVWYWx1ZUF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlIjoiU0hWR1NZTUZUU1FUTlhNRCIsInZhbHVlVHlwZSI6IlNJTkdMRV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkJlc3Qgb2YgU2hhdmVycyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D">
+          <div class="card">
+              <img src="./assets/img/Card4.webp" class="card-img-top" alt="Shaver">
+              <div class="card-body card_font text-center">
+                  <h5 class="card-title ">Best of Shavers</h5>
+                  <p class="card-text">From ₹1,649</p>
+              </div>
           </div>
-        </section>
-     </nav>
-     <script src="./assets/script/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-2 col-6">
+        <a class="text-decoration-none" href="https://www.flipkart.com/wearable-smart-devices/smart-watches/pr?sid=ajy%2Cbuh&marketplace=FLIPKART&p%5B%5D=facets.brand%255B%255D%3DboAt&p%5B%5D=facets.fulfilled_by%255B%255D%3DPlus%2B%2528FAssured%2529&hpid=GyvrFHodWj0JnmAnTgnyZap7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTEsMDk5Il0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJzaW5nbGVWYWx1ZUF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlIjoiU01XR1FITjRNV1U2WkpHTiIsInZhbHVlVHlwZSI6IlNJTkdMRV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbImJvQXQgU21hcnR3YXRjaGVzIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D">
+          <div class="card">
+              <img src="./assets/img/Card1.webp" class="card-img-top" alt="Noise Smartwatch">
+              <div class="card-body card_font text-center">
+                  <h5 class="card-title">Noise Smartwatches</h5>
+                  <p class="card-text">From ₹1,099</p>
+              </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-2 col-6">
+        <a class="text-decoration-none" href="https://www.flipkart.com/cameras/dslr-mirrorless/pr?sid=jek%2Cp31%2Ctrv&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&p%5B%5D=facets.type%255B%255D%3DMirrorless&param=179&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJTaG9wIE5vdyEiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJUb3AgTWlycm9ybGVzcyBDYW1lcmFzIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJzaW5nbGVWYWx1ZUF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlIjoiRExMR1FBUVlOVDM5WkpURyIsInZhbHVlVHlwZSI6IlNJTkdMRV9WQUxVRUQifX19fX0%3D">
+          <div class="card">
+              <img src="./assets/img/card6.webp" class="card-img-top" alt="Kids Camera">
+              <div class="card-body card_font text-center">
+                  <h5 class="card-title">Top Mirrorless Cam...</h5>
+                  <p class="card-text">Shop Now!</p>
+              </div>
+          </div>
+        </a>
+    </div>
+    <div class="col-md-4 col-lg-2 col-6">
+      <a class="text-decoration-none" href="https://www.flipkart.com/fastrack-optimus-pro-1-43-amoled-display-aod-466x466-functional-crown-bt-calling-smartwatch/p/itm536e5793d5d9f?pid=SMWGV3ZYUDHACXVD&lid=LSTSMWGV3ZYUDHACXVDSFUDWY&hl_lid=&marketplace=FLIPKART">
+        <div class="card">
+            <img src="./assets/img/Card2.webp" class="card-img-top" alt="Fastrack Smartwatch">
+            <div class="card-body card_font text-center">
+                <h5 class="card-title">Fastrack Smartwatch</h5>
+                <p class="card-text">From ₹1,399</p>
+            </div>
+        </div>
+      </a>
+    </div>    
+  </div>
+</div>
+
+
+  </main>
+
+  <script src="./assets/script/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

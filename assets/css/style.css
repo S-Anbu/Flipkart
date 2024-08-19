@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+body{
+    background-color: #cecfcf;
+}
+header{
+    background-color:white;
+    box-shadow: 0px 7px 8px 2px rgba(0,0,0,0.10);
+}
+main{
+    margin-top: 20px;
+}
 .bg1{
     background-color: #f0f5ff;
     padding: 5px 15px;
     border-radius: 8px;
     width: 100%;
     flex-grow: 5;
-}
-#header{
-    position: fixed;
-    width: 100%;
 }
 #nav{
     flex-grow: 5;
@@ -26,6 +31,39 @@
 border-radius: 5px;
 padding: 5px;
 }
+._login-div{
+    position: relative;
+}
+.login-div{
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 250px;
+    border-radius: 6px;
+    background-color:#ffffff;
+    box-shadow: 1px 1px 2px 2px #cecfcf;
+}
+.login-ul{
+    list-style: none;
+}
+.yx2hEq,ul>a{
+    text-decoration: none;
+    color: black;
+
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.AT0fUR{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    width: 200px;
+}
 .login-btn a,.cart,.seller{
     text-decoration: none;
     color:black;
@@ -36,14 +74,120 @@ padding: 5px;
     a{
         color: white;
     }
+    #rotate{
+        transform: rotate(180deg)
+    }
+    .login-div{
+        display: block;
+    }
 }
+.login-btn #rotate{
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
 .three-dot:hover{
     background-color: #f0f5ff;
     border-radius: 6px;
 }
-@media screen and (min-width: 600px) {
-    #dummy{
-        display: none;
+
+
+.main{
+    margin-top: 100px;
+}
+.top_scroller{
+    box-shadow: 0px 1px 17px 8px rgba(0,0,0,0.1);
+}
+#carouselExampleDark{
+    padding: 10px 20px;
+}
+.scroll_banner_image{
+ 
+    border-radius: 6px;
+
+}
+.card{
+    box-shadow: 0px 1px 17px 8px rgba(0,0,0,0.1);
+}
+.card_font{
+    text-decoration: none;
+    color: black;
+}
+.card_font > h5{
+    font-size: 14px;
+
+}
+.card_font > p{
+    font-weight: bold;
+}
+@media screen and (max-width:1100px){
+    #carouselExampleDark{
+        padding: 10px 20px;
     }
+    .scroll_banner_image{
+        height: 165px;
+        width: 100%;
+        border-radius: 6px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #dummy{
+        display: none !important;
+    }
+    .top_scroller_image{
+        width: 60px;
+        height: 60px;
+    }
+    ._login-div{
+        gap: 1rem !important;
+    }
+    .header_image{
+        width: 100px;
+        height: 40px;
+    }
+
+    .top_scroller_span{
+        font-size: 13px;
+    }
+    #carouselExampleDark{
+        padding: 10px 20px;
+        height: 15  0px;
+    }
+    .scroll_banner_image{
+        height: 100px;
+        width: 400px;
+        border-radius: 6px;
+
+    }
+}
+@media only screen and (max-width: 955px) {
+    #hide_span{
+        display: none ;
+    }
+    #carouselExampleDark{
+        padding: 10px 20px;
+    }
+    .scroll_banner_image{
+        height: 122px;
+        width: 100%;
+        border-radius: 6px;
+
+    }
+
     
+}
+@media only screen and (max-width: 450px) {
+    .header_image{
+        width: 80px;
+        height: 40px;
+    }
+
+    .top_scroller_span{
+        font-size: 12px;
+    }
+    .top_scroller_image{
+        width: 50px;
+        height: 50px;
+    }
 }
