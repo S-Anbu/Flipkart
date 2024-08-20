@@ -123,10 +123,10 @@ padding: 5px;
 .card_font > p{
     font-weight: bold;
 }
-@media only screen and (max-width:1100px){
+@media only screen and (max-width:1000px){
     .carousel{
         padding: 10px 20px;
-        width: 95%;
+        width: 90%;
         border-radius: 6px;
     }
     .scroll_banner_image{
@@ -181,6 +181,7 @@ padding: 5px;
     }
     .carousel{
         padding: 10px 20px;
+        width: 90%;
     }
     .scroll_banner_image{
         height: 150px;
