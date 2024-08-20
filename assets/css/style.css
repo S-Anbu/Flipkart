@@ -177,10 +177,11 @@ padding: 5px;
     }
     .carousel{
         padding: 10px 20px;
+        width: 90%;
     }
     .scroll_banner_image{
         height: 100px;
-        width: 400px;
+        width: 100%;
         border-radius: 6px;
 
     }
