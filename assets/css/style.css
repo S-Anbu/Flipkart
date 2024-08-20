@@ -124,12 +124,16 @@ padding: 5px;
     font-weight: bold;
 }
 .nested_image{
-    width: 270px;
+    width: 200px;
     
 }
 .nested_image2{
-    width: 220px;
+    width: 150px;
 }
+.nested_image3{
+    width: 150px;
+}
+
 @media only screen and (max-width:1000px){
     .carousel{
         padding: 10px 20px;
