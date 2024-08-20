@@ -90,6 +90,9 @@ padding: 5px;
     background-color: #f0f5ff;
     border-radius: 6px;
 }
+.login-div{
+    z-index: 1;
+}
 
 
 .main{
@@ -121,7 +124,7 @@ padding: 5px;
     font-weight: bold;
 }
 @media screen and (max-width:1100px){
-    #carouselExampleDark{
+    .carousel{
         padding: 10px 20px;
     }
     .scroll_banner_image{
@@ -129,6 +132,17 @@ padding: 5px;
         width: 100%;
         border-radius: 6px;
     }
+}
+@media screen and (min-width:1440px) {
+    .carousel{
+        padding: 10px 20px;
+        margin-left: 35px;
+    }
+    .scroll_banner_image{
+        width: 97%;
+        border-radius: 6px;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -143,16 +157,15 @@ padding: 5px;
         gap: 1rem !important;
     }
     .header_image{
-        width: 100px;
+        width: 80%;
         height: 40px;
     }
 
     .top_scroller_span{
         font-size: 13px;
     }
-    #carouselExampleDark{
+    .carousel{
         padding: 10px 20px;
-        height: 15  0px;
     }
     .scroll_banner_image{
         height: 100px;
@@ -165,11 +178,11 @@ padding: 5px;
     #hide_span{
         display: none ;
     }
-    #carouselExampleDark{
+    .carousel{
         padding: 10px 20px;
     }
     .scroll_banner_image{
-        height: 122px;
+        height: 150px;
         width: 100%;
         border-radius: 6px;
 
