@@ -123,6 +123,13 @@ padding: 5px;
 .card_font > p{
     font-weight: bold;
 }
+.nested_image{
+    width: 270px;
+    
+}
+.nested_image2{
+    width: 220px;
+}
 @media only screen and (max-width:1000px){
     .carousel{
         padding: 10px 20px;
